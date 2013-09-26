@@ -76,6 +76,122 @@
     ]
   },
   {
+    "name": "jquery",
+    "description": "Control the DOM with javascript",
+    "$then": ["python", "ruby", "node", "angular", "backbone", "ember", "sugar", "coffeescript", "flight", "dart"],
+    "home": "http://jquery.com/",
+    "links": [
+      {
+        "name": "jQuery in 30 Minutes",
+        "url": "http://highoncoding.com/Videos/537_Extended_Screencast_on_JQuery_Whole_38_Minutes_.aspx"
+      },
+      {
+        "name": "Codecademy",
+        "url": "http://www.codecademy.com/courses/web-beginner-en-bay3D/0/1?curriculum_id=50a3fad8c7a770b5fd0007a1"
+      },
+      {
+        "name": "Treehouse - Build an Interactive Website",
+        "url": "http://teamtreehouse.com/library/websites/build-an-interactive-website"
+      }
+    ]
+  },
+  {
+    "name": "bootstrap",
+    "description": "A popular frontend framework",
+    "$then": ["angular", "ember", "backbone", "sass", "less", "flight"],
+    "home": "http://getbootstrap.com/",
+    "links": [
+      {
+        "name": "Get Started",
+        "url": "http://getbootstrap.com/getting-started/"
+      },
+      {
+        "name": "Getting Started with Bootstrap 3",
+        "url": "http://www.realpython.com/blog/design/getting-started-with-bootstrap-3"
+      }
+    ]
+  },
+  {
+    "name": "less",
+    "description": "A dynamic stylesheet language",
+    "$then": ["sass", "bootstrap", "angular"],
+    "home": "http://lesscss.org/",
+    "links": [
+      {
+        "name": "Try It!",
+        "url": "http://less2css.org/"
+      }
+    ]
+  },
+  {
+    "name": "sass",
+    "description": "An extension of css",
+    "$then": ["less", "bootstrap", "angular"],
+    "home": "http://sass-lang.com/",
+    "links": [
+      {
+        "name": "Tutorial",
+        "url": "http://sass-lang.com/tutorial.html"
+      },
+      {
+        "name": "Try",
+        "url": "http://sass-lang.com/try.html"
+      },
+      {
+        "name": "SassMeister",
+        "url": "http://sassmeister.com"
+      }
+    ]
+  },
+  {
+    "name": "angular",
+    "description": "Build powerful data-driven html and javascript",
+    "$then": ["ember", "jquery", "backbone", "flight"],
+    "home": "http://angularjs.org/",
+    "links": [
+      {
+        "name": "egghead.io",
+        "url": "http://egghead.io/lessons"
+      },
+      {
+        "name": "A Better Way to Learn Angular",
+        "url": "http://www.thinkster.io/pick/GtaQ0oMGIl/"
+      }
+    ]
+  },
+  {
+    "name": "ember",
+    "description": "Build robust single-page apps with javascript",
+    "$then": ["angular", "jquery", "backbone", "flight"],
+    "home": "http://emberjs.com/",
+    "links": [
+      {
+        "name": "Getting Started TodoMVC Guide",
+        "url": "http://emberjs.com/guides/getting-started/"
+      },
+      {
+        "name": "Ember 101",
+        "url": "http://ember101.com/"
+      },
+      {
+        "name": "Let's Learn Ember",
+        "url": "http://freecourses.tutsplus.com/lets-learn-ember/"
+      }
+    ]
+  },
+  {
+    "name": "backbone",
+    "description": "A framework that makes handling data easier in javascript",
+    "$then": ["angular", "jquery", "ember", "flight"],
+    "home": "http://backbonejs.org/",
+    "links": [
+      {
+        "name": "Developing Backbone.js Applications",
+        "url": "http://addyosmani.github.io/backbone-fundamentals/"
+      }
+    ]
+  },
+  {
     "name": "sublime text",
     "description": "A popular text editor",
     "$then": ["vim"],
@@ -151,26 +267,7 @@
       }
     ]
   },
-  {
-    "name": "jquery",
-    "description": "Control the DOM with javascript",
-    "$then": ["python", "ruby", "node", "angular", "backbone", "ember", "sugar", "coffeescript", "flight", "dart"],
-    "home": "http://jquery.com/",
-    "links": [
-      {
-        "name": "jQuery in 30 Minutes",
-        "url": "http://highoncoding.com/Videos/537_Extended_Screencast_on_JQuery_Whole_38_Minutes_.aspx"
-      },
-      {
-        "name": "Codecademy",
-        "url": "http://www.codecademy.com/courses/web-beginner-en-bay3D/0/1?curriculum_id=50a3fad8c7a770b5fd0007a1"
-      },
-      {
-        "name": "Treehouse - Build an Interactive Website",
-        "url": "http://teamtreehouse.com/library/websites/build-an-interactive-website"
-      }
-    ]
-  },
+
   {
     "name": "python",
     "description": "A programming language to easily pick up",
@@ -468,22 +565,6 @@
     ]
   },
   {
-    "name": "bootstrap",
-    "description": "A popular frontend framework",
-    "$then": ["angular", "ember", "backbone", "sass", "less", "flight"],
-    "home": "http://getbootstrap.com/",
-    "links": [
-      {
-        "name": "Get Started",
-        "url": "http://getbootstrap.com/getting-started/"
-      },
-      {
-        "name": "Getting Started with Bootstrap 3",
-        "url": "http://www.realpython.com/blog/design/getting-started-with-bootstrap-3"
-      }
-    ]
-  },
-  {
     "name": "flight",
     "description": "An event-driven web framework for javascript",
     "home": "http:/flightjs.github.io",
@@ -515,38 +596,7 @@
       }
     ]
   },
-  {
-    "name": "less",
-    "description": "A dynamic stylesheet language",
-    "$then": ["sass", "bootstrap", "angular"],
-    "home": "http://lesscss.org/",
-    "links": [
-      {
-        "name": "Try It!",
-        "url": "http://less2css.org/"
-      }
-    ]
-  },
-  {
-    "name": "sass",
-    "description": "An extension of css",
-    "$then": ["less", "bootstrap", "angular"],
-    "home": "http://sass-lang.com/",
-    "links": [
-      {
-        "name": "Tutorial",
-        "url": "http://sass-lang.com/tutorial.html"
-      },
-      {
-        "name": "Try",
-        "url": "http://sass-lang.com/try.html"
-      },
-      {
-        "name": "SassMeister",
-        "url": "http://sassmeister.com"
-      }
-    ]
-  },
+
   {
     "name": "heroku",
     "description": "Easily deploy your applications",
@@ -651,54 +701,7 @@
       }
     ]
   },
-  {
-    "name": "angular",
-    "description": "Build powerful data-driven html and javascript",
-    "$then": ["ember", "jquery", "backbone", "flight"],
-    "home": "http://angularjs.org/",
-    "links": [
-      {
-        "name": "egghead.io",
-        "url": "http://egghead.io/lessons"
-    	},
-      {
-        "name": "A Better Way to Learn Angular",
-        "url": "http://www.thinkster.io/pick/GtaQ0oMGIl/"
-      }
-    ]
-  },
-  {
-    "name": "ember",
-    "description": "Build robust single-page apps with javascript",
-    "$then": ["angular", "jquery", "backbone", "flight"],
-    "home": "http://emberjs.com/",
-    "links": [
-      {
-        "name": "Getting Started TodoMVC Guide",
-        "url": "http://emberjs.com/guides/getting-started/"
-      },
-      {
-        "name": "Ember 101",
-        "url": "http://ember101.com/"
-      },
-      {
-        "name": "Let's Learn Ember",
-        "url": "http://freecourses.tutsplus.com/lets-learn-ember/"
-      }
-    ]
-  },
-  {
-    "name": "backbone",
-    "description": "A framework that makes handling data easier in javascript",
-    "$then": ["angular", "jquery", "ember", "flight"],
-    "home": "http://backbonejs.org/",
-    "links": [
-    	{
-    	  "name": "Developing Backbone.js Applications",
-    	  "url": "http://addyosmani.github.io/backbone-fundamentals/"
-    	}
-    ]
-  },
+
   {
     "name": "underscore",
     "description": "A utility belt for javascript",
