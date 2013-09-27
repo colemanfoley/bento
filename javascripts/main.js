@@ -94,46 +94,34 @@ function masterCtrl($scope, $window, $http, $timeout) {
 
   $scope.next_boxes = null;
 
-  $scope.set_next_boxes = function($box) {
-    if ($scope.current_box === null || $box != $scope.current_box) {
-      $scope.current_box = $box
-      $scope.next_boxes = $box.$then;
-    } else {
-      $scope.current_box = null;
-      $scope.next_boxes = null;
-    }
-  }
+  // $scope.set_next_boxes = function($box) {
+  //   if ($scope.current_box === null || $box != $scope.current_box) {
+  //     $scope.current_box = $box
+  //     $scope.next_boxes = $box.$then;
+  //   } else {
+  //     $scope.current_box = null;
+  //     $scope.next_boxes = null;
+  //   }
+  // }
 
-  $scope.in_next_boxes = function($name) {
-    if ($scope.current_box === null) return true;
-    if ($name == $scope.current_box.name) return 'current';
-    return ($scope.current_box == null || $scope.next_boxes.indexOf($name) > -1);
-  }
+  // $scope.in_next_boxes = function($name) {
+  //   if ($scope.current_box === null) return true;
+  //   if ($name == $scope.current_box.name) return 'current';
+  //   return ($scope.current_box == null || $scope.next_boxes.indexOf($name) > -1);
+  // }
 
   $scope.load_boxes = function() {
-    $scope.boxes = CONTENT_BACKUP;
+    // $scope.boxes = CONTENT_BACKUP;
     // Remove fallback
     // Fallback message
     $timeout(function() { $("#message").css("display", "block") }, 750);
-    $.getJSON( "content.json", function(data) {
-      $scope.boxes = data;
-      $scope.frontendBoxes = data[0];
+    $.getJSON( "frontend.json", function(data) {
+      $scope.frontend = data;
       $scope.working = true;
-      $timeout(function() { $("#donate").hide().slideDown("normal") }, 13000);
     });
-  }();
-
-  $scope.more_index = null;
-
-  $scope.show_more = function($index) {
-    $scope.more_index = $index;
-  }
-
-  $scope.load_sponsors = function() {
-    // Remove fallback
-    $.getJSON( "sponsors.json", function(data) {
-      $scope.sponsors = data;
-      $scope.sponsors.other.sort()
+    $.getJSON( "backend.json", function(data) {
+      $scope.backend = data;
+      $scope.working = true;
     });
   }();
 }

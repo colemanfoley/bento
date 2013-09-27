@@ -1,0 +1,130 @@
+[
+  {
+    "name": "elixir",
+    "description": "A functional language built on top of the Erlang VM",
+    "$then": [],
+    "home": "http://elixir-lang.org/",
+    "links": [
+      {
+        "name": "Try Elixir",
+        "url": "http://tryelixir.org/"
+      },
+      {
+        "name": "Getting Started",
+        "url": "http://elixir-lang.org/getting_started/1.html"
+      },
+      {
+        "name": "Learn X in Y minutes",
+        "url": "http://learnxinyminutes.com/docs/elixir/"
+      }
+    ]
+  },
+  {
+    "name": "flight",
+    "description": "An event-driven web framework for javascript",
+    "home": "http:/flightjs.github.io",
+    "$then": ["ember", "angular", "backbone", "bootstrap"],
+    "links": [
+      {
+        "name": "Learn Flight",
+        "url": "http://learnflight.io"
+      }
+    ]
+  },
+  {
+    "name": "meteor",
+    "description": "A framework to build realtime web applications in JavaScript",
+    "$then": ["angular", "ember", "backbone", "flight"],
+    "home": "https://www.meteor.com",
+    "links": [
+      {
+        "name": "Friendly walkthrough",
+        "url": "http://andrewscala.com/meteor/"
+      },
+      {
+        "name": "Discover Meteor book",
+        "url": "http://www.discovermeteor.com/"
+      },
+      {
+        "name": "EventedMind advanced screencasts",
+        "url": "https://www.eventedmind.com/"
+      }
+    ]
+  },
+  {
+    "name": "http",
+    "description": "The basics of making web requests",
+    "$then": ["python", "node", "heroku", "json", "rest", "https"],
+    "home": "http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol",
+    "links": [
+      {
+        "name": "A Beginner's Guide",
+        "url": "http://net.tutsplus.com/tutorials/other/a-beginners-introduction-to-http-and-rest/"
+      }
+    ]
+  },
+  {
+    "name": "https",
+    "description": "The basics of secure connections",
+    "$then": [],
+    "home": "http://en.wikipedia.org/wiki/HTTP_Secure",
+    "links": [
+      {
+        "name": "First Milliseconds https",
+        "url": "http://www.moserware.com/2009/06/first-few-milliseconds-of-https.html"
+      }
+    ]
+  },
+  {
+    "name": "memcached",
+    "description": "A way to cache your data in memory",
+    "$then": ["mongo", "redis", "heroku", "neo4j", "sql"],
+    "home": "http://memcached.org/",
+    "links": [
+      {
+        "name": "An Adventure in Learning Memcached",
+        "url": "https://code.google.com/p/memcached/wiki/TutorialCachingStory"
+      }
+    ]
+  },
+  {
+    "name": "coffeescript",
+    "description": "A language that compiles to javascript",
+    "$then": ["underscore", "angular", "backbone"],
+    "home": "http://coffeescript.org/",
+    "links": [
+      {
+        "name": "Learn X in Y Minutes",
+        "url": "http://learnxinyminutes.com/docs/coffeescript/"
+      }
+    ]
+  },
+  {
+    "name": "dart",
+    "description": "A new language for structured web app engineering",
+    "$then": ["node"],
+    "home": "http://dartlang.org",
+    "links": [
+      {
+        "name": "Programmer’s Guide",
+        "url": "https://www.dartlang.org/docs/"
+      },
+      {
+        "name": "Learn X in Y Minutes",
+        "url": "http://learnxinyminutes.com/docs/dart/"
+      }
+    ]
+  },
+  {
+    "name": "xml",
+    "description": "An alternative to json",
+    "home": "",
+    "$then": ["json", "http"],
+    "links": [
+      {
+        "name": "XML Tutorial",
+        "url": "http://www.quackit.com/xml/tutorial/"
+      }
+    ]
+  },
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "name": "sublime text",
+    "description": "A popular text editor",
+    "$then": ["vim"],
+    "home": "http://www.sublimetext.com/",
+    "links": [
+      {
+        "name": "tuts+",
+        "url": "https://tutsplus.com/lesson/hello-2/"
+      }
+    ]
+  },
+  {
+    "name": "vim",
+    "description": "A text editor in your console",
+    "$then": ["vim"],
+    "home": "http://vim.sourceforge.net/",
+    "links": [
+      {
+        "name": "Vim Adventures",
+        "url": "http://vim-adventures.com/"
+      }
+    ]
+  },
+  {
+    "name": "json",
+    "description": "How data is sent between applications",
+    "$then": ["mongo", "http", "jquery", "rest", "xml"],
+    "home": "http://www.json.org/",
+    "links": [
+      {
+        "name": "What is JSON?",
+        "url": "http://www.copterlabs.com/blog/json-what-it-is-how-it-works-how-to-use-it/"
+      },
+      {
+        "name": "Treehouse - Getting data from the web",
+        "url": "http://teamtreehouse.com/library/ios-development/build-a-blog-reader-iphone-app/getting-data-from-the-web"
+      }
+    ]
+  },
+  {
+    "name": "regex",
+    "description": "A popular syntax for pattern matching",
+    "home": "http://www.regular-expressions.info/",
+    "$then": ["json", "rest"],
+    "links":[
+      {
+        "name": "Learn Regex the Hard Way",
+        "url": "http://regex.learncodethehardway.org/book/"
+      }
+    ]
+  }
+  {
+    "name": "heroku",
+    "description": "Easily deploy your applications",
+    "$then": ["git", "python", "node", "ruby"],
+    "home": "http://heroku.com/",
+    "links": [
+      {
+        "name": "Get Started",
+        "url": "https://devcenter.heroku.com/articles/quickstart"
+      },
+      {
+        "name": "Intro to Heroku Screencast",
+        "url": "http://www.codeschool.com/code_tv/heroku"
+      }
+    ]
+  },
+  {
+    "name": "git",
+    "description": "Version control that's simple to use",
+    "$then": ["http", "heroku"],
+    "home": "http://git-scm.com/",
+    "links": [
+      {
+        "name": "The simple guide",
+        "url": "http://rogerdudler.github.io/git-guide/"
+      },
+      {
+        "name": "Try Git",
+        "url": "http://try.github.io/levels/1/challenges/1"
+      },
+      {
+        "name": "Git Immersion",
+        "url": "http://gitimmersion.com/"
+      },
+      {
+        "name":"Git: Offical Documentation",
+        "url":"http://git-scm.com/book/en/Getting-Started"
+      }
+    ]
+  },
+  {
+    "name": "vagrant",
+    "description": "A tool for building and managing virtual environments",
+    "home": "http://www.vagrantup.com/",
+    "$then": ["docker"],
+    "links":[
+      {
+        "name":"Why Vagrant?",
+        "url": "http://docs-v1.vagrantup.com/v1/docs/getting-started/why.html"
+      },
+      {
+        "name": "Getting Started",
+        "url": "http://docs.vagrantup.com/v2/getting-started/index.html"
+      }
+    ]
+  },
+  {
+    "name": "docker",
+    "description": "Create lightweight, portable, self-sufficient containers",
+    "home": "http://http://www.docker.io/",
+    "$then": ["vagrant"],
+    "links":[]
+  },
+
+  {
+    "name": "mashape",
+    "description": "An easy way to distribute, monetize and consume multiple APIs",
+    "home": "",
+    "$then": ["facebook", "foursquare", "twilio", "ribbon"],
+    "links": [
+      {
+        "name": "Codecademy",
+        "url": "http://www.codecademy.com/tracks/mashape"
+      }
+    ]
+  },
+  {
+    "name": "twilio",
+    "description": "Send and receive texts and calls",
+    "home": "http://twilio.com/",
+    "$then": ["facebook", "foursquare", "ribbon"],
+    "links":[
+      {
+        "name": "Quickstart",
+        "url": "http://www.twilio.com/docs/quickstart"
+      }
+    ]
+  },
+  {
+    "name": "ribbon",
+    "description": "Accept payments on your site",
+    "home": "http://bit.ly/UHd0Et",
+    "$then": ["facebook", "foursquare", "twilio"],
+    "links":[
+      {
+        "name": "About video",
+        "url": "http://vimeo.com/65430073"
+      }
+    ]
+  },
+  {
+    "name": "alchemy",
+    "description": "A natural language processing service",
+    "home": "http://www.alchemyapi.com/",
+    "$then": ["facebook", "foursquare", "twilio"],
+    "links":[
+      {
+        "name": "Demo",
+        "url": "http://www.alchemyapi.com/products/demo/"
+      }
+    ]
+  }
+  {
+    "name": "facebook",
+    "description": "Get data about people and their networks",
+    "home": "https://developers.facebook.com/",
+    "$then": ["foursquare", "ribbon", "twilio"],
+    "links":[
+      {
+        "name": "Explore",
+        "url": "https://developers.facebook.com/tools/explorer"
+      }
+    ]
+  },
+  {
+    "name": "foursquare",
+    "description": "Get data about places",
+    "home": "http://developer.foursquare.com/",
+    "$then": ["facebook", "twilio", "ribbon"],
+    "links":[
+      {
+        "name": "Tutorial",
+        "url": "https://developer.foursquare.com/overview/tutorial"
+      },
+      {
+        "name": "Explore",
+        "url": "https://developer.foursquare.com/docs/explore"
+      }
+    ]
+  },
+  {
+    "name": "underscore",
+    "description": "A utility belt for javascript",
+    "$then": ["sugar", "backbone", "coffeescript","lodash", "flight"],
+    "home": "http://underscorejs.org/",
+    "links": [
+      {
+        "name": "Getting Cozy with Underscore",
+        "url": "http://net.tutsplus.com/tutorials/javascript-ajax/getting-cozy-with-underscore-js/"
+      }
+    ]
+  },
+  {
+    "name": "lodash",
+    "description": "A utility library delivering performance",
+    "$then": ["sugar", "backbone", "coffeescript","underscore"],
+    "home": "http://lodash.com/",
+    "links": [
+    ]
+  },
+  {
+    "name": "sugar",
+    "description": "Extend the functionality of javascript",
+    "$then": ["underscore", "backbone", "coffeescript"],
+    "home": "http://sugarjs.com/",
+    "links": [
+    ]
+  },
+]

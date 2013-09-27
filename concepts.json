@@ -1,0 +1,83 @@
+[
+  {
+    "name": "rest",
+    "description": "A way to architecture your applications around verbs and resources",
+    "home": "",
+    "$then": ["json", "xml", "http"],
+    "links": [
+      {
+        "name": "Designing HTTP Interfaces and RESTful Web Services",
+        "url": "http://munich2012.drupal.org/program/sessions/designing-http-interfaces-and-restful-web-services.html"
+      },
+      {
+        "name": "White House Web API Standards",
+        "url": "https://github.com/WhiteHouse/api-standards"
+      },
+      {
+        "name": "Architectural Styles and the Design of Network-based Software Architectures",
+        "url": "http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm"
+      },
+      {
+        "name": "Create a Super Basic REST API with django-tastypie",
+        "url": "http://www.realpython.com/blog/python/create-a-super-basic-rest-api-with-django-tastypie"
+      }
+    ]
+  },
+  {
+    "name": "security",
+    "description": "General tips around security",
+    "$then": ["https"],
+    "home": "https://www.owasp.org/index.php/Category:OWASP_Guide_Project",
+    "links": [
+      {
+        "name": "How Encryption Works",
+        "url": "http://www.wimp.com/howencryption/"
+      },
+      {
+        "name": "Google security handbook",
+        "url": "https://code.google.com/p/browsersec/wiki/Main"
+      }
+    ]
+  },
+  {
+    "name":"mvc",
+    "description": "Popular software architecture pattern",
+    "$then": ["codeigniter", "laravel"],
+    "home": "http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller",
+    "links": [
+      {
+        "name":"The Model-View-Controller Pattern",
+        "url":"https://en.wikibooks.org/wiki/Computer_Science_Design_Patterns/Model%E2%80%93view%E2%80%93controller"
+      },
+      {
+        "name":"What are the benefits of MVC?",
+        "url":"http://blog.iandavis.com/2008/12/09/what-are-the-benefits-of-mvc/"
+      }
+    ]
+  },
+  {
+    "name": "seo",
+    "description": "Ranking well in search engines",
+    "home": "",
+    "$then": [],
+    "links":[
+    ]
+  },
+  {
+    "name": "api",
+    "description": "How to expose and access data from different services",
+    "home": "",
+    "$then": ["mashape"],
+    "links": [
+      {
+        "name": "Designing an API",
+        "url": "http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api?hn"
+      },
+      {
+        "name": "A list of 40+ tutorials on how to make an api",
+        "url": "http://blog.mashape.com/post/60820526317/list-of-40-tutorials-on-how-to-create-an-api"
+      }
+    ]
+  },
+  
+]

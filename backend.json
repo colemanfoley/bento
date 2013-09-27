@@ -1,0 +1,481 @@
+[
+  {
+    "name": "django",
+    "description": "A popular web framework for python",
+    "$then": ["tornado", "mongo", "flask", "heroku", "memcached"],
+    "home": "http://www.djangoproject.com",
+    "links": [
+      {
+        "name": "Want to Learn Django?",
+        "url": "http://elweb.co/want-to-learn-django-start-here/"
+      },
+      {
+        "name": "Documentation",
+        "url": "https://docs.djangoproject.com/en/1.5/"
+      },
+      {
+        "name": "Setting up a Django Project from Scratch",
+        "url": "http://realdjango.herokuapp.com/"
+      }
+    ]
+  },
+  {
+    "name": "python",
+    "description": "A programming language to easily pick up",
+    "$then": ["flask", "django", "tornado", "mongo", "heroku", "ruby", "node", "go"],
+    "home": "http://www.python.org/",
+    "links": [
+    	{
+    	  "name": "Intro to Computer Science",
+    	  "url": "https://www.udacity.com/course/cs101"
+    	},
+      {
+        "name": "Learn Python",
+        "url": "http://www.learnpython.org/"
+      },
+      {
+        "name": "Learn X in Y Minutes",
+        "url": "http://learnxinyminutes.com/docs/python/"
+      },
+      {
+        "name": "New Coder",
+        "url": "http://newcoder.io"
+      }
+    ]
+  },
+  {
+    "name": "flask",
+    "description": "A basic microframework for python on the web",
+    "$then": ["tornado", "mongo", "django", "heroku", "memcached"],
+    "home": "http://flask.pocoo.org/",
+    "links": [
+      {
+        "name": "Documentation",
+        "url": "http://flask.pocoo.org/docs/"
+      }
+    ]
+  },
+    {
+    "name": "bottle",
+    "description": "Bottle is a fast, simple and lightweight micro framework for Python",
+    "$then": ["flask", "tornado", "mongo", "django", "heroku", "memcached"],
+    "home": "http://bottlepy.org/docs/dev/",
+    "links": [
+      {
+        "name": "Developing with Bottle",
+        "url": "http://www.realpython.com/blog/python/developing-with-bottle-part-1"
+      }
+    ]
+  },
+  {
+    "name": "tornado",
+    "description": "An asynchronous microframework for python on the web",
+    "$then": ["flask", "mongo", "heroku", "django", "memcached"],
+    "home": "http://www.tornadoweb.org/en/stable/",
+    "links": [
+      {
+        "name": "Documentation",
+        "url": "http://www.tornadoweb.org/en/stable/documentation.html"
+      }
+    ]
+  },
+  {
+    "name": "ruby",
+    "description": "An easy, expressive and dynamic scripting language",
+    "$then": ["rails", "heroku", "python"],
+    "home": "http://www.ruby-lang.org/en/",
+    "links": [
+      {
+        "name": "Try Ruby",
+        "url": "http://tryruby.org/levels/1/challenges/0"
+      },
+      {
+        "name": "Learn X in Y Minutes",
+        "url": "http://learnxinyminutes.com/docs/ruby/"
+      },
+      {
+        "name": "Learn Ruby the Hard Way",
+        "url": "http://ruby.learncodethehardway.org/"
+      },
+      {
+        "name": "Treehouse - Ruby Foundations",
+        "url": "http://teamtreehouse.com/library/programming/ruby-foundations"
+      }
+    ]
+  },
+  {
+    "name": "rails",
+    "description": "An awesome web framework for ruby",
+    "$then": ["heroku", "ruby", "coffeescript", "less", "sass", "sql", "http"],
+    "home": "http://rubyonrails.org/",
+    "links": [
+      {
+        "name": "What is Ruby on Rails?",
+        "url": "http://railsapps.github.io/what-is-ruby-rails.html"
+      },
+      {
+        "name": "Recommendations for a Rails Tutorial",
+        "url": "https://tutorials.railsapps.org/rails-tutorial"
+      },
+      {
+        "name": "The Best Way to Learn Rails",
+        "url": "http://net.tutsplus.com/tutorials/ruby/the-best-way-to-learn-ruby-on-rails/"
+      },
+      {
+        "name": "Michael Hartl's Tutorial",
+        "url": "http://ruby.railstutorial.org/"
+      },
+      {
+        "name": "RailsCasts",
+        "url": "http://railscasts.com/"
+      },
+      {
+        "name": "Treehouse - Build a Simple Ruby on Rails Application",
+        "url": "http://teamtreehouse.com/library/programming/build-a-simple-ruby-on-rails-application"
+      },
+      {
+        "name": "When Should You Use Scaffolding?",
+        "url": "http://gun.io/blog/using-scaffolding/"
+      }
+    ]
+  },
+  {
+    "name": "node",
+    "description": "Create a backend with javascript",
+    "$then": ["express", "json", "http", "heroku", "mongo", "ember", "angular"],
+    "home": "http://nodejs.org/",
+    "links": [
+      {
+        "name": "How Do I Get Started?",
+        "url": "http://stackoverflow.com/a/5511507/1043674"
+      },
+      {
+        "name": "Node Beginner",
+        "url": "http://www.nodebeginner.org/"
+      },
+      {
+        "name": "Style Guide",
+        "url": "http://nodeguide.com/style.html"
+      },
+      {
+        "name": "nodeschool.io",
+        "url": "http://nodeschool.io/"
+      }
+    ]
+  },
+  {
+    "name": "express",
+    "description": "The most popular web framework for node",
+    "$then": ["heroku", "http", "angular", "ember"],
+    "home": "http://expressjs.com/",
+    "links": [
+      {
+        "name": "Guide",
+        "url": "http://expressjs.com/guide.html"
+      },
+      {
+        "name": "Introduction to Express",
+        "url": "http://net.tutsplus.com/tutorials/javascript-ajax/introduction-to-express/"
+      }
+    ]
+  },
+  {
+    "name": "go",
+    "description": "A new language for the web",
+    "home": "http://golang.org/",
+    "$then": ["python", "ruby", "node"],
+    "links": [
+    	{
+    		"name": "Tour",
+    		"url": "http://tour.golang.org/#1"
+    	}
+    ]
+  },
+  {
+    "name": "parse",
+    "description": "A backend for mobile apps",
+    "home": "https://parse.com/",
+    "$then": ["facebook", "foursquare", "twilio"],
+    "links":[
+      {
+        "name": "Tutorials",
+        "url": "https://parse.com/tutorials"
+      }
+    ]
+  },
+  {
+    "name": "coldfusion",
+    "description": "A server application for java",
+    "home": "http://www.adobe.com/products/coldfusion-family.html",
+    "$then": [],
+    "links":[
+      {
+        "name":"Coldfusion Tutorials",
+        "url": "http://www.quackit.com/coldfusion/tutorial/"
+      },
+      {
+        "name":"Raymond Camden's CF Blog",
+        "url": "http://www.raymondcamden.com/index.cfm/ColdFusion"
+      },
+      {
+        "name": "Dan Vega's CF Blog entries",
+        "url": "http://www.danvega.org/blog/coldfusion"
+      },
+      {
+        "name": "Ben Nadel CF Blog entries",
+        "url": "http://www.bennadel.com/blog/tags/1-ColdFusion-blog-entries.htm"
+      }
+    ]
+  },
+  {
+    "name": ".net",
+    "description": "A development framework for the web",
+    "home": "http://www.microsoft.com/net",
+    "$then": [],
+    "links":[
+      {
+        "name": "Intro to ASP.NET MVC 4",
+        "url": "http://www.asp.net/mvc/tutorials/mvc-4/getting-started-with-aspnet-mvc4/intro-to-aspnet-mvc-4"
+      }
+    ]
+  },
+  {
+    "name": "firebase",
+    "description": "A realtime backend for your web or mobile app",
+    "home": "https://www.firebase.com/index.html",
+    "$then": [],
+    "links": [
+      {
+        "name": "5 Minute Chat Tutorial",
+        "url": "https://www.firebase.com/tutorial/#gettingstarted"
+      },
+      {
+        "name": "Codecademy",
+        "url": "http://www.codecademy.com/tracks/firebase"
+      }
+    ]
+  },
+  {
+    "name": "apache",
+    "description": "A very popular http web server",
+    "home": "https://httpd.apache.org/",
+    "$then": ["http", "rest", "nginx"],
+    "links":[
+      {
+        "name": "Apache Documenttion",
+        "url": "https://httpd.apache.org/docs/2.4/"
+      }
+    ]
+  },
+  {
+    "name": "nginx",
+    "description": "A popular http web server, load balancer and http cache",
+    "home": "http://nginx.org/",
+    "$then": ["http", "rest", "apache"],
+    "links":[
+      {
+        "name": "Beginner's Guide",
+        "url": "http://nginx.org/en/docs/beginners_guide.html"
+      }
+    ]
+  },
+  {
+    "name": "perl",
+    "description": "A web programming language great for text manipulation and rapid development",
+    "home": "http://www.perl.org/",
+    "$then": ["postgresql", "vagrant"],
+    "links":[
+      {
+        "name": "Learn Perl",
+        "url": "http://www.perl.org/learn.html"
+      },
+      {
+      	"name": "CPAN",
+      	"url": "http://www.cpan.org/"
+      },
+      {
+      	"name": "metacpan",
+      	"url": "http://www.metacpan.org/"
+      }
+    ]
+  },
+  {
+    "name": "postgresql",
+    "description": "The world's most advanced open source database",
+    "home": "http://www.postgresql.org/",
+    "$then": ["vagrant"],
+    "links":[
+      {
+        "name": "PostgresApp",
+        "url": "http://postgresapp.com/"
+      }
+    ]
+  },
+  {
+    "name": "codeigniter",
+    "description": "An awesome MVC PHP Framework",
+    "$then": ["mysql"],
+    "home": "http://ellislab.com/codeigniter",
+    "links": [
+      {
+        "name": "CodeIgniter user manual",
+        "url": "http://ellislab.com/codeigniter/user-guide/"
+      }
+    ]
+  },
+  {
+    "name": "laravel",
+    "description": "The php framework for web artisans",
+    "$then": [],
+    "home": "http://www.laravel.com",
+    "links": [
+    	{
+    	  "name": "Laravel Docs",
+    	  "url": "http://laravel.com/docs"
+    	},
+    	{
+    	  "name": "Laravel Ins and Outs",
+    	  "url": "http://laravel.io"
+    	},
+    	{
+    	  "name": "Laravel Cheatsheet",
+    	  "url": "http://cheats.jesse-obrien.ca/"
+    	},
+    	{
+    	  "name": "Laravel 4 Mastery",
+    	  "url": "http://net.tutsplus.com/tutorials/php/laravel-4-mastery/"
+    	},
+    	{
+    	  "name": "Laravel Tutorials via Jason Lewis",
+    	  "url": "http://jasonlewis.me/laravel-tutorials"
+    	}
+    ]
+  },
+  {
+    "name": "PHPixie",
+    "description": "Lightweight, fast and easy to learn framework",
+    "$then": [],
+    "home": "http://phpixie.com/",
+    "links": [
+      {
+          "name": "30 Minute Tutorial",
+          "url": "http://phpixie.com/tutorials/learn-phpixie-in-30-minutes/"
+        },
+        {
+          "name": "Developer Blog",
+          "url": "http://phpixie.com/blog/"
+        }
+    ]
+  },
+  {
+    "name": "java",
+    "description": "A popular programming language",
+    "home": "",
+    "$then": ["python", "ruby", "node", "coldfusion", "scala"],
+    "links": [
+    	{
+    		"name": "Programming Methodology",
+    		"url": "http://see.stanford.edu/see/courseinfo.aspx?coll=824a47e1-135f-4508-a5aa-866adcae1111"
+    	}
+    ]
+  },
+  {
+    "name": "scala",
+    "description": "A new, highly performant language that works with Java",
+    "home": "http://www.scala-lang.org/",
+    "$then": ["play"],
+    "links":[]
+  },
+  {
+    "name": "play",
+    "description": "A popular web framework for scala",
+    "home": "http://www.playframework.com/",
+    "$then": [],
+    "links":[
+      {
+        "name": "Your first Play application",
+        "url": "http://www.playframework.com/documentation/2.2.x/ScalaTodoList"
+      }
+    ]
+  },
+  {
+    "name": "php",
+    "description": "A server-side language for the web",
+    "$then": ["python", "node", "sql", "laravel"],
+    "home": "http://php.net/",
+    "links": [
+      {
+        "name": "PHP The Right Way",
+        "url": "http://www.phptherightway.com"
+      },
+      {
+        "name": "Learn X in Y Minutes",
+        "url": "http://learnxinyminutes.com/docs/php/"
+      },
+      {
+        "name": "Treehouse - Become a PHP Developer",
+        "url": "http://teamtreehouse.com/learning-adventures/become-a-php-developer"
+      }
+    ]
+  },
+  {
+    "name": "redis",
+    "description": "A basic key-value store",
+    "$then": ["mongo", "memcached", "heroku", "neo4j", "sql"],
+    "home": "http://redis.io/",
+    "links": [
+      {
+        "name": "Try Redis",
+        "url": "http://try.redis.io/"
+      }
+    ]
+  },
+  {
+    "name": "sql",
+    "description": "A popular database language",
+    "$then": ["json", "mongo", "neo4j", "redis", "memcached", "php"],
+    "home": "http://www.mysql.com/",
+    "links": [
+    	{
+    	  "name": "Problems and Solutions",
+    	  "url": "http://www.sql-tutorial.ru/en/book_Intro.html"
+    	},
+      {
+        "name": "w3schools",
+        "url": "http://www.w3schools.com/sql/"
+      },
+      {
+        "name": "Treehouse - Database Foundations",
+        "url": "http://teamtreehouse.com/library/programming/database-foundations"
+      }
+    ]
+  },
+  {
+    "name": "mongo",
+    "description": "A simple javascript based database",
+    "$then": ["heroku", "json", "http", "neo4j", "redis", "memcached", "sql"],
+    "home": "http://www.mongodb.org/",
+    "links": [
+      {
+        "name": "Try Mongo",
+        "url": "http://try.mongodb.org/"
+      },
+      {
+        "name": "MongoDB University",
+        "url": "https://education.mongodb.com/"
+      }
+    ]
+  },
+  {
+    "name": "neo4j",
+    "description": "The graph database",
+    "$then": ["http", "mongo", "redis", "memcached", "sql"],
+    "home": "http://www.neo4j.org/",
+    "links": [
+      {
+        "name": "Learn Cypher",
+        "url": "http://www.neo4j.org/learn/cypher"
+      }
+    ]
+  }
+]
