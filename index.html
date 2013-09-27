@@ -87,6 +87,24 @@
                 <a target="_self" href="http://rbn.co/0d4199" class="ribbon-ios">Become a sponsor</a>
             </header>
             <div id="box_container" class="container-fluid">
+                <!-- Front end stuff -->
+                <div class="span3 box_container" ng-repeat="($index, box) in frontendBoxes">
+                    <div class="box highlight-{{ in_next_boxes(box.name) }}" ng-click="set_next_boxes(box)">
+                        <a name="{{ box.name }}"></a>
+                        <a target="_blank" class="title" href="{{ box.home }}"><h2>{{ box.name }}</h2></a>                        
+                        <p>{{ box.description }}</p>
+                        <div ng-repeat="($key, link) in box.links">
+                            <a target="_blank" href="{{ link.url  }}" ng-show="$key < 2">{{ link.name  }}</a>
+                        </div>
+                        <div ng-show="box.links.length >= 2">
+                            <a target="_blank" href="" ng-click="show_more($index)">More</a>
+                        </div>
+                        <div ng-show="box.links.length == 0">
+                            <a target="_blank" href="https://github.com/JonHMChan/bento/tree/gh-pages" class="nolink">No links yet! Add one</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Everything other than front end stuff. -->
                 <div class="span3 box_container" ng-repeat="($index, box) in boxes">
                     <div class="box highlight-{{ in_next_boxes(box.name) }}" ng-click="set_next_boxes(box)">
                         <a name="{{ box.name }}"></a>

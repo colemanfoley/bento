@@ -117,6 +117,7 @@ function masterCtrl($scope, $window, $http, $timeout) {
     $timeout(function() { $("#message").css("display", "block") }, 750);
     $.getJSON( "content.json", function(data) {
       $scope.boxes = data;
+      $scope.frontendBoxes = data[0];
       $scope.working = true;
       $timeout(function() { $("#donate").hide().slideDown("normal") }, 13000);
     });
