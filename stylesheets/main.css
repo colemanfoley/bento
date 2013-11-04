@@ -167,7 +167,10 @@ header h1 {
     color: #333;
 }
 .box_container .box.highlight-true:hover {
-    background: #666;
+    transition: background .25s ease-in-out;
+    -moz-transition: background .25s ease-in-out;
+    -webkit-transition: background .25s ease-in-out;
+    background: #999;
 }
 .box_container .box.highlight-current a:link, .box_container .box.highlight-current a:visited, .box_container .box.highlight-current a:hover {
     color: #000;
@@ -182,10 +185,14 @@ header h1 {
     text-decoration: none!important;
     color: #333!important;
     font-weight: normal;
+    font-size: 2.0em;
+    max-width: 90%;
+    overflow: hidden;
 }
 #modal {
     z-index: 10000;
     position: fixed;
+    top: 0;
     padding: 25px 0px;
     background: #333;
     color: #fff;
@@ -203,6 +210,33 @@ header h1 {
     width: 100%;
     text-align: center;
 }
+#donate_container {
+    background-color: #ccc;
+    height: 30px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-align: left;
+}
+#donate_progress {
+    background-color: #08c;
+    float: left;
+    height: 30px;
+}
+#donate_progress_number {
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    padding: 5px 5px;
+}
+#donate_progress_label {
+    color: #333;
+    font-weight: bold;
+    float: left;
+    padding: 5px 10px;
+}
+#donate_line {
+    font-size: 1.2em;
+}
 #pull {
     text-align: center;
     padding-bottom: 50px;
@@ -210,6 +244,12 @@ header h1 {
 #sponsors {
     color: #999;
     text-align: center;
+}
+.sponsorship_tier {
+    cursor: pointer;
+}
+.sponsorship_tier h3:hover {
+    color: #08c;
 }
 .sponsor {
     transition: color .25s ease-in-out;
@@ -221,13 +261,41 @@ header h1 {
     color: #333;
     cursor: default;
 }
+.sponsor_top_true {
+    font-weight: bold;
+}
 #sponsor_container {
     max-width: 1200px;
     margin: 0px auto;
     text-align: center;
 }
-
-
+#sponsor_container .span3 {
+    padding: 15px 0px;
+}
+#sponsor_container h3, #sponsor_container h4 {
+    margin: 0px;
+    padding: 0px;
+}
+#sponsor_container .highlight {
+    color: #FFB600;
+}
+#sponsor_container .highlight_2 {
+    color: #FF6140;
+}
+#sponsor_container .highlight_3 {
+    color: #999;
+}
+ol {
+    text-align: left;
+}
+ol li {
+    padding: 10px 0px;
+}
+#group_container {
+    max-width: 1200px;
+    margin: 0px auto;
+    text-align: center;
+}
 
 
 

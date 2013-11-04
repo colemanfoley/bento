@@ -88,16 +88,30 @@ url:"http://see.stanford.edu/see/courseinfo.aspx?coll=824a47e1-135f-4508-a5aa-86
 {name:"apache",description:"A very popular http web server",home:"https://httpd.apache.org/",$then:["http","rest","nginx"],links:[{name:"Apache Documenttion",url:"https://httpd.apache.org/docs/2.4/"}]},{name:"nginx",description:"A popular http web server, load balancer and http cache",home:"http://nginx.org/",$then:["http","rest","apache"],links:[{name:"Beginner's Guide",url:"http://nginx.org/en/docs/beginners_guide.html"}]},{name:"perl",description:"A web programming language great for text manipulation and rapid development",
 home:"http://www.perl.org/",$then:[],links:[{name:"Learn Perl",url:"http://www.perl.org/learn.html"},{name:"CPAN",url:"http://www.cpan.org/"},{name:"metacpan",url:"http://www.metacpan.org/"}]},{name:"postgresql",description:"The world's most advanced open source database",home:"http://www.postgresql.org/",$then:[],links:[{name:"PostgresApp",url:"http://postgresapp.com/"}]}];
 
-function masterCtrl($scope, $window, $http, $timeout) {
+function masterCtrl($scope, $window, $http, $timeout, $location, $anchorScroll, $document) {
+
+  $scope.donate_progress = Math.round(217.4*100/2083.33);
 
   $scope.current_box = null;
 
   $scope.next_boxes = null;
 
-  $scope.set_next_boxes = function($box) {
+  $scope.use_hash = function() {
+    if ($window.location.hash) {
+      var hash = $window.location.hash.toLowerCase().replace(/[^a-zA-Z0-9]/g,'');
+      var box = $scope.boxes.findAll({name: hash})[0];
+      if (box) $scope.set_next_boxes(box);
+      $location.hash(hash);
+      $anchorScroll();
+      console.log("Jump to: "+hash);
+    }
+  }
+
+  $scope.set_next_boxes = function($box, $index) {
     if ($scope.current_box === null || $box != $scope.current_box) {
       $scope.current_box = $box
       $scope.next_boxes = $box.$then;
+      if ($index != $scope.more_index) $scope.more_index = null;
     } else {
       $scope.current_box = null;
       $scope.next_boxes = null;
@@ -115,12 +129,41 @@ function masterCtrl($scope, $window, $http, $timeout) {
     // Remove fallback
     // Fallback message
     $timeout(function() { $("#message").css("display", "block") }, 750);
-    $.getJSON( "content.json", function(data) {
+    $.getJSON("content.json", function(data) {
       $scope.boxes = data;
       $scope.working = true;
       $timeout(function() { $("#donate").hide().slideDown("normal") }, 13000);
     });
   }();
+
+  $scope.load_sponsors = function() {
+    // Remove fallback
+    /* JSON mime type */
+    $.getJSON("sponsors.json", function(data) {
+      $scope.sponsors = data;
+      $scope.sponsors.other.sort();
+      $scope.sponsors.desired.sort();
+    });
+  }();
+
+  $scope.tiers_hidden = true;
+
+  $scope.show_sponsorship = function() {
+    if ($scope.tiers_hidden) {
+      $("#sponsorship_tiers").hide().removeClass("hidden").slideDown("normal");
+      if ($("#max_amount").val() != true) $("#max_amount").val("10");
+    }
+    $scope.tiers_hidden = false;
+  }
+
+  $scope.set_sponsorship = function($amount) {
+    $("#max_amount").val($amount);
+  }
+
+  $scope.fire_sponsorship = function() {
+    if ($("#max_amount").val().length == 0) $("#max_amount").val("10");
+    $("#sponsorship").submit();
+  }
 
   $scope.more_index = null;
 
@@ -128,11 +171,4 @@ function masterCtrl($scope, $window, $http, $timeout) {
     $scope.more_index = $index;
   }
 
-  $scope.load_sponsors = function() {
-    // Remove fallback
-    $.getJSON( "sponsors.json", function(data) {
-      $scope.sponsors = data;
-      $scope.sponsors.other.sort()
-    });
-  }();
 }
